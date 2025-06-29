@@ -1,0 +1,66 @@
+/* Style général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Titre */
+  h1 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 20px;
+  }
+  
+  /* Informations du profil */
+  .profile-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-info label {
+    font-weight: bold;
+    color: #66ccff;
+  }
+  
+  .profile-info span {
+    color: #e0e0e0;
+  }
+  
+  /* Bouton */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .profile-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  
