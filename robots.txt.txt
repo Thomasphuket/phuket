@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phuketwokcergy.github.io/sitemap.xmlsitemap.xml
