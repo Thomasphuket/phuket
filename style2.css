@@ -133,24 +133,26 @@ header {
 
 /* --- Pages catégories --- */
 .menu-category {
- /* background: rgba(8, 4, 4, 0.9);*/
-  padding: 60px 20px;
-  text-align: center;
-  color: #E8E2D4;
-  max-width: 800px;
-  margin: 40px auto;
+  background: rgba(20, 20, 20, 0.8); /* Fond noir transparent */
   border-radius: 10px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 0; /* on laisse la gestion du padding à fond-noir-unifie */
 }
+
 
 .menu-category h2 {
   font-family: 'Dancing Script', cursive;
   font-size: 3em;
   color: #D79758;
   margin-bottom: 10px;
+  text-align: center; /* ← ceci centre le texte */
 }
+
 
 .menu-category p {
   font-size: 1.2em;
+   text-align: center;
   margin-bottom: 40px;
 }
 
@@ -294,8 +296,11 @@ header {
 }
 
 .fond-noir-unifie {
-  background: rgba(8, 4, 4, 0.9);
+  background-color: #111;
+  padding: 40px 5%; /* réduit les marges latérales */
+  color: white;
 }
+
 .menu-category{
   background: rgba(20, 20, 20, 0.8); /* Fond noir transparent */
   border-radius: 10px;
@@ -307,15 +312,15 @@ header {
   background: rgba(20, 20, 20, 0.8); /* fond semi-transparent noir */
   border-radius: 10px;
   padding: 60px 20px;
-  margin: 40px auto;
+  margin: 20px auto;
   max-width: 1400px; /* ← plus large qu'avant */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 .footer {
-  background-color: #ffffff;
+  background-color: (20, 20, 20, 0.8);
   padding: 40px 20px;
-  color: #000;
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   border-top: 5px solid #000;
 }
@@ -354,4 +359,37 @@ header {
   border-top: 1px solid #ccc;
   padding-top: 10px;
   font-size: 0.9em;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.price {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffd700; /* couleur dorée, modifiable selon ta charte */
+}
+.dish-text,
+.dish-text h3,
+.dish-text p {
+  text-align: left !important;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.logo-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  color: #D79758; /* couleur or qui va avec ton style */
 }
